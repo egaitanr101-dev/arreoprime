@@ -1,8 +1,10 @@
 # Vercel publica SOLO la aplicación web (index.html, css, js, assets).
 # Lo siguiente queda en el repositorio pero NO se publica en el sitio.
-sql/
-docs/
-tools/
-supabase/
-README.md
-.claude/
+# La barra inicial limita cada regla a la RAÍZ del proyecto
+# (sin ella, "supabase/" también excluiría js/api/supabase/, que la app necesita).
+/sql/
+/docs/
+/tools/
+/supabase/
+/README.md
+/.claude/
