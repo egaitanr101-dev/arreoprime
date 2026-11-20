@@ -1,0 +1,8 @@
+# Vercel publica SOLO la aplicación web (index.html, css, js, assets).
+# Lo siguiente queda en el repositorio pero NO se publica en el sitio.
+sql/
+docs/
+tools/
+supabase/
+README.md
+.claude/

@@ -1,0 +1,13 @@
+# Ajustes locales del editor / Claude Code (rutas del equipo)
+.claude/
+# Vercel CLI (si se usa)
+.vercel/
+# Archivos del sistema y de OneDrive
+Thumbs.db
+desktop.ini
+*.tmp
+*.log
+
+# Repositorio PÚBLICO: las migraciones que nombran a personas reales (correos de colegas)
+# quedan solo en este equipo. Ejecutarlas desde aquí en el SQL Editor de Supabase.
+sql/migraciones/2026-11-19_0[4-8]_*.sql

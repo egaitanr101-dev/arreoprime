@@ -1,0 +1,12 @@
+[
+  { "id": "10000000-0000-4000-8000-000000000001", "nombre": "Ana Solís (prueba)", "rol": "SOLICITANTE", "departamento": "COM", "depto_nombre": "Comercial" },
+  { "id": "10000000-0000-4000-8000-000000000002", "nombre": "Carlos Mora (prueba)", "rol": "SOLICITANTE", "departamento": "COM", "depto_nombre": "Comercial" },
+  { "id": "10000000-0000-4000-8000-000000000003", "nombre": "Laura Jiménez (prueba)", "rol": "SOLICITANTE", "departamento": "ALM", "depto_nombre": "Almacén" },
+  { "id": "10000000-0000-4000-8000-000000000004", "nombre": "Diego Vargas (prueba)", "rol": "SOLICITANTE", "departamento": "LIQ", "depto_nombre": "Liquidaciones" },
+  { "id": "10000000-0000-4000-8000-000000000005", "nombre": "María Rojas (prueba)", "rol": "OPERADOR_TRANSPORTES", "departamento": "TRA", "depto_nombre": "Transportes", "nota": "Alcance Comercial y Almacén; sin permiso financiero" },
+  { "id": "10000000-0000-4000-8000-000000000006", "nombre": "José Araya (prueba)", "rol": "OPERADOR_TRANSPORTES", "departamento": "TRA", "depto_nombre": "Transportes", "nota": "Permiso financiero e investigaciones otorgado" },
+  { "id": "10000000-0000-4000-8000-000000000010", "nombre": "Pablo Méndez (prueba)", "rol": "OPERADOR_TRANSPORTES", "departamento": "TRA", "depto_nombre": "Transportes", "nota": "No disponible: no recibe asignaciones" },
+  { "id": "10000000-0000-4000-8000-000000000007", "nombre": "Sofía Castro (prueba)", "rol": "SUPERVISOR_TRANSPORTES", "departamento": "TRA", "depto_nombre": "Transportes" },
+  { "id": "10000000-0000-4000-8000-000000000008", "nombre": "Ricardo Pérez (prueba)", "rol": "GERENCIA", "departamento": "GER", "depto_nombre": "Gerencia", "nota": "Solo lectura" },
+  { "id": "10000000-0000-4000-8000-000000000009", "nombre": "Andrea Quesada (prueba)", "rol": "ADMINISTRADOR", "departamento": "SIS", "depto_nombre": "Sistemas", "nota": "Sin acceso a tickets" }
+]

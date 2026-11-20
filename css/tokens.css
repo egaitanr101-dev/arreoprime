@@ -1,0 +1,216 @@
+/* Tokens de diseño y estilos base — identidad Grupo CIISA / El Arreo.
+   Azul marino corporativo (#0b1d3a) + dorado del logo (#F0B020).
+   Tema claro por defecto; oscuro por preferencia del sistema o por el selector (data-theme en <html>).
+   Regla de contraste: el dorado se usa como RELLENO (botones, estados activos) con texto marino;
+   para texto o íconos de acento sobre fondo claro se usa --primary-ink (dorado oscuro). */
+:root {
+  color-scheme: light;
+  --font: "Segoe UI", system-ui, -apple-system, Roboto, "Helvetica Neue", Arial, sans-serif;
+  --mono: ui-monospace, "Cascadia Mono", "Segoe UI Mono", Consolas, monospace;
+
+  /* Neutros fríos */
+  --bg: #f3f5f9;
+  --surface: #ffffff;
+  --surface-2: #f7f9fc;
+  --surface-3: #eaeef5;
+  --border: #dfe4ee;
+  --border-strong: #c7cfdd;
+  --text: #0f1b2e;
+  --text-2: #3d4a60;
+  --muted: #66728a;
+
+  /* Marca */
+  --brand-gold: #f0b020;
+  --brand-navy: #0b1d3a;
+  --brand-navy-2: #132b52;
+  --brand-dark: #0b1d3a;
+  --brand-bronze: #b08030;
+  --primary: #f0b020;          /* relleno de acciones principales */
+  --primary-hover: #dc9f12;
+  --primary-soft: #fdf4dc;
+  --primary-text: #0b1d3a;     /* texto sobre dorado (contraste ≈ 10:1) */
+  --primary-ink: #8a5c0a;      /* texto/íconos de acento sobre fondo claro (≈ 5.6:1) */
+  --focus: #c88a0a;
+
+  /* Menú lateral azul marino */
+  --sidebar: #0b1d3a;
+  --sidebar-2: #13284b;
+  --sidebar-text: #c9d3e4;
+  --sidebar-muted: #8494b0;
+  --sidebar-active: #1a3360;
+
+  /* Estado (status palette: siempre acompañado de icono + texto) */
+  --good: #0ca30c;
+  --good-text: #00660a;
+  --good-soft: #e7f6e7;
+  --warning: #fab219;
+  --warning-text: #8a5a00;
+  --warning-soft: #fff5dd;
+  --serious: #ec835a;
+  --critical: #d03b3b;
+  --critical-text: #b42323;
+  --critical-soft: #fdecec;
+  --info-soft: #e8f0fb;
+  --info-text: #1d4f94;
+  --internal-soft: #fff7e6;
+  --internal-border: #e3b558;
+
+  /* Series de gráficos (paleta categórica validada, orden fijo) */
+  --series-1: #2a78d6;
+  --series-2: #eb6834;
+  --grid: #e3e7ef;
+  --axis: #c3c9d6;
+
+  /* Estados del ticket */
+  --st-nuevo: #2563eb;
+  --st-revision: #7c3aed;
+  --st-asignado: #0e7490;
+  --st-proceso: #b45309;
+  --st-espera: #64748b;
+  --st-resuelto: #15803d;
+  --st-cerrado: #334155;
+  --st-rechazado: #b91c1c;
+
+  --radius: 14px;
+  --radius-sm: 9px;
+  --shadow: 0 1px 2px rgba(11, 29, 58, .05), 0 4px 14px rgba(11, 29, 58, .06);
+  --shadow-lg: 0 18px 44px rgba(11, 29, 58, .22);
+  --sidebar-w: 268px;
+  --topbar-h: 64px;
+}
+
+@media (prefers-color-scheme: dark) {
+  :root:not([data-theme="light"]) {
+    color-scheme: dark;
+    --bg: #070f1d;
+    --surface: #0f1a2d;
+    --surface-2: #132036;
+    --surface-3: #1a2a44;
+    --border: #22324d;
+    --border-strong: #2f4363;
+    --text: #edf1f8;
+    --text-2: #c2cbdb;
+    --muted: #8d9ab2;
+    --primary: #f2b42a;
+    --primary-hover: #f6c455;
+    --primary-soft: #2e2510;
+    --primary-text: #0b1d3a;
+    --primary-ink: #f2c14e;
+    --focus: #f2b42a;
+    --sidebar: #050c18;
+    --sidebar-2: #0d1a30;
+    --sidebar-active: #142744;
+    --good-text: #4cc94c;
+    --good-soft: #10291a;
+    --warning-text: #f5c25a;
+    --warning-soft: #2e2510;
+    --critical-text: #f08080;
+    --critical-soft: #331616;
+    --info-soft: #132849;
+    --info-text: #9cc2f5;
+    --internal-soft: #2b2312;
+    --internal-border: #8a6a25;
+    --series-1: #3987e5;
+    --series-2: #d95926;
+    --grid: #1f2d45;
+    --axis: #2f4363;
+    --st-nuevo: #6b9cf5;
+    --st-revision: #a98af0;
+    --st-asignado: #3fb6cf;
+    --st-proceso: #f0a33c;
+    --st-espera: #9aa8bb;
+    --st-resuelto: #4cc272;
+    --st-cerrado: #b8c3d4;
+    --st-rechazado: #f07a7a;
+    --shadow: 0 1px 2px rgba(0, 0, 0, .4), 0 4px 14px rgba(0, 0, 0, .25);
+    --shadow-lg: 0 18px 44px rgba(0, 0, 0, .6);
+  }
+}
+:root[data-theme="dark"] {
+  color-scheme: dark;
+  --bg: #070f1d;
+  --surface: #0f1a2d;
+  --surface-2: #132036;
+  --surface-3: #1a2a44;
+  --border: #22324d;
+  --border-strong: #2f4363;
+  --text: #edf1f8;
+  --text-2: #c2cbdb;
+  --muted: #8d9ab2;
+  --primary: #f2b42a;
+  --primary-hover: #f6c455;
+  --primary-soft: #2e2510;
+  --primary-text: #0b1d3a;
+  --primary-ink: #f2c14e;
+  --focus: #f2b42a;
+  --sidebar: #050c18;
+  --sidebar-2: #0d1a30;
+  --sidebar-active: #142744;
+  --good-text: #4cc94c;
+  --good-soft: #10291a;
+  --warning-text: #f5c25a;
+  --warning-soft: #2e2510;
+  --critical-text: #f08080;
+  --critical-soft: #331616;
+  --info-soft: #132849;
+  --info-text: #9cc2f5;
+  --internal-soft: #2b2312;
+  --internal-border: #8a6a25;
+  --series-1: #3987e5;
+  --series-2: #d95926;
+  --grid: #1f2d45;
+  --axis: #2f4363;
+  --st-nuevo: #6b9cf5;
+  --st-revision: #a98af0;
+  --st-asignado: #3fb6cf;
+  --st-proceso: #f0a33c;
+  --st-espera: #9aa8bb;
+  --st-resuelto: #4cc272;
+  --st-cerrado: #b8c3d4;
+  --st-rechazado: #f07a7a;
+  --shadow: 0 1px 2px rgba(0, 0, 0, .4), 0 4px 14px rgba(0, 0, 0, .25);
+  --shadow-lg: 0 18px 44px rgba(0, 0, 0, .6);
+}
+
+*, *::before, *::after { box-sizing: border-box; }
+html { -webkit-text-size-adjust: 100%; }
+body {
+  margin: 0;
+  font-family: var(--font);
+  font-size: 14px;
+  line-height: 1.5;
+  color: var(--text);
+  background: var(--bg);
+  -webkit-font-smoothing: antialiased;
+}
+h1, h2, h3, h4 { margin: 0; line-height: 1.25; font-weight: 650; letter-spacing: -.01em; }
+h2 { font-size: 1.45rem; }
+h3 { font-size: 1rem; }
+h4 { font-size: .9rem; margin: 18px 0 8px; color: var(--text-2); }
+p { margin: 0 0 8px; }
+a { color: var(--primary-ink); text-decoration: none; }
+a:hover { text-decoration: underline; }
+button, input, select, textarea { font: inherit; color: inherit; }
+:focus-visible { outline: 2px solid var(--focus); outline-offset: 2px; border-radius: 4px; }
+.ico { flex: none; vertical-align: middle; }
+img, svg { max-width: 100%; }
+
+/* Utilidades */
+.muted { color: var(--muted); }
+.small { font-size: 12.5px; }
+.block { display: block; }
+.center { text-align: center; }
+.right { text-align: right; }
+.nowrap { white-space: nowrap; }
+.mono { font-family: var(--mono); font-size: 12.5px; }
+.pre { white-space: pre-wrap; word-break: break-word; }
+.trunc { display: block; max-width: 280px; overflow: hidden; text-overflow: ellipsis; white-space: nowrap; }
+.neg { color: var(--critical-text); }
+.pos { color: var(--good-text); }
+.warn-text { color: var(--warning-text); }
+.req { color: var(--critical-text); }
+.sr-only { position: absolute; width: 1px; height: 1px; overflow: hidden; clip: rect(0 0 0 0); white-space: nowrap; }
+.help { font-size: 12.5px; color: var(--muted); margin: 8px 0 0; display: flex; gap: 6px; align-items: flex-start; }
+.help .ico { margin-top: 2px; }
+.print-only { display: none; }
+[hidden] { display: none !important; }
